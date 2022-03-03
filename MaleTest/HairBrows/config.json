@@ -1,0 +1,13 @@
+{
+    "trait_groups": [
+        {
+            "folder": "HAIR",
+            "csv": "hair.csv",
+            "extension": ".PNG"
+        },
+        {
+            "folder": "BROWS",
+            "csv": "brows.csv"
+        }
+    ]
+}

@@ -1,3 +1,12 @@
+# merged file extensions
+*.jpeg
+*.jpg
+*.png
+
+*.JPEG
+*.JPG
+*.PNG
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
