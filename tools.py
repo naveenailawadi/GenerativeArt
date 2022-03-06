@@ -8,11 +8,12 @@ import os
 # a class for one piece of art (good for storing data, as you can pass an entire trait into it)
 class Art:
     def __init__(self, trait_dict):
-        # keep all the trait dicts in a list
-        self.traits = []
+        # keep all the trait dicts in a list (starting with the one passed)
+        self.traits = [trait_dict]
 
         # open the full path
         self.image = Image.open(trait_dict['full_path'])
+        print(f"Opened {trait_dict}")
 
     # paste a new trait dict onto the existing traits
     def paste(self, new_trait_dict):
@@ -21,22 +22,21 @@ class Art:
 
         # paste the new trait on the base
         new_image = Image.open(new_trait_dict['full_path'])
-        self.image.paste(new_image)
+        self.image.paste(new_image, (0, 0), new_image)
 
     # export the data
-
-    def export(self, art_name, filename, art_extension):
+    def export(self, art_name, folder, filename, art_extension):
         # save the image
-        self.image.save(f"{filename}.{art_extension.lower()}")
+        self.image.save(f"{folder}/files/{filename}.{art_extension}")
 
         # get the metadata
-        art_metadata = self.metadata(art_name)
+        art_metadata = self.metadata
 
         # set the art name of the metadata
         art_metadata['name'] = art_name
 
         # export the metadata
-        with open(f"{filename}.json", 'w') as outfile:
+        with open(f"{folder}/metadata/{filename}.json", 'w') as outfile:
             outfile.write(json.dumps(art_metadata, indent=4))
 
     # function to create trait metadata
@@ -78,48 +78,53 @@ class TraitGroupHandler:
         # save the directory name
         self.directory = directory
 
+        # use the directory to make a trait type (title case)
+        self.trait_type = os.path.basename(self.directory).title()
+
         # open the trait csv
-        self.df = pd.read_csv(f"{self.directory}/{trait_csv}")
+        df = pd.read_csv(f"{self.directory}/{trait_csv}")
 
         # add a column called full_path mapping the file and directory
-        self.df['full_path'] = f"{self.directory}/{self.df['file']}"
+        df['full_path'] = [
+            f"{self.directory}/{row['file']}" for index, row in df.iterrows()]
 
-        # add a column with the png id
-        self.df['file_id'] = int(self.df['file'].split('.')[0])
+        # add a column with the file id
+        df['file_id'] = [int(row['file'].split('.')[0])
+                         for index, row in df.iterrows()]
+
+        # add the trait type for all the traits
+        df['trait_type'] = [
+            self.trait_type for index, row in df.iterrows()]
 
         # store the traits for later access
-        self.traits = self.df.to_dict(orient='records')
+        self.traits = df.to_dict(orient='records')
 
     # make a way to get a random trait
     def random_trait(self):
         # get the trait choice
         trait_choice = random.choice(self.traits)
 
-        # add the trait type (the same for all of them)
-        trait_choice['trait_type'] = self.trait_type
-
         return trait_choice
-
-    # get the folder
-    @property
-    def trait_type(self):
-        return self.directory.split('/')[-1]
 
     # get the length
     def __len__(self):
-        return len(self.df)
+        return len(self.traits)
 
 
 # class to handle merging jpegs into art
 class FileMerger:
-    def __init__(self, directory, config_file='config.json'):
+    def __init__(self, directory, export_directory, config_file='config.json'):
+        # save the directories
+        self.directory = directory
+        self.export_directory = export_directory
+
         # load the config
         with open(f"{directory}/{config_file}", 'r') as infile:
-            self.data = infile.read()
+            self.config = json.loads(infile.read())
 
         # make trait groups
         self.trait_groups = {trait_group['folder']: TraitGroupHandler(
-            self.trait_directory(trait_group['folder']), trait_group['csv']) for trait_group in self.data['trait_groups']}
+            self.trait_directory(trait_group['folder']), trait_group['csv']) for trait_group in self.config['trait_groups']}
 
         # get the number of combinations for later use
         self.combinations = self.get_combinations()
@@ -177,14 +182,15 @@ class FileMerger:
         for trait in traits_to_merge[1:]:
             # paste the next trait on top of the existing art
             art.paste(trait)
+            print(f"pasted {trait}")
 
         # export the art
-        extension = self.trait_groups[0]['extension']
-        art.export(art_name, filename, extension)
+        extension = self.config['export_extension']
+        art.export(art_name, self.export_directory, filename, extension)
 
     # simple way to get the trait folder's full directory
     def trait_directory(self, folder):
-        return f"{os.getcwd()}/{folder}"
+        return f"{self.directory}/{folder}"
 
     # a way to get unique names from a list of files
     def flatten_filenames(self, filenames):

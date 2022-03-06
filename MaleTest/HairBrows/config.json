@@ -10,5 +10,6 @@
             "csv": "brows.csv",
             "extension": ".PNG"
         }
-    ]
+    ],
+    "export_extension": "PNG"
 }
