@@ -19,7 +19,10 @@ def main(amount_to_create, config_filepath, new_collection_filepath):
             f"You cannot create {amount_to_create}, as there are only {file_merger.combinations} possible combinations with this data")
         sys.exit()
 
+    for i in range(amount_to_create):
+        file_merger.safe_merge(f"Avvenire Test Citizen #{i}", str(i))
+
 
 if __name__ == '__main__':
     # run main with sys inputs
-    main(sys.argv[1], sys.argv[2], sys.argv[3])
+    main(int(sys.argv[1]), sys.argv[2], sys.argv[3])

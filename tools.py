@@ -5,6 +5,11 @@ import json
 import os
 
 
+# set the folders for export
+METADATA_FOLDER = 'metadata'
+FILE_FOLDER = 'files'
+
+
 # a class for one piece of art (good for storing data, as you can pass an entire trait into it)
 class Art:
     def __init__(self, trait_dict):
@@ -27,7 +32,7 @@ class Art:
     # export the data
     def export(self, art_name, folder, filename, art_extension):
         # save the image
-        self.image.save(f"{folder}/files/{filename}.{art_extension}")
+        self.image.save(f"{folder}/{FILE_FOLDER}/{filename}.{art_extension}")
 
         # get the metadata
         art_metadata = self.metadata
@@ -36,7 +41,7 @@ class Art:
         art_metadata['name'] = art_name
 
         # export the metadata
-        with open(f"{folder}/metadata/{filename}.json", 'w') as outfile:
+        with open(f"{folder}/{METADATA_FOLDER}/{filename}.json", 'w') as outfile:
             outfile.write(json.dumps(art_metadata, indent=4))
 
     # function to create trait metadata
@@ -118,6 +123,9 @@ class FileMerger:
         self.directory = directory
         self.export_directory = export_directory
 
+        # check to make sure that the export directory exists
+        self.check_export_directory()
+
         # load the config
         with open(f"{directory}/{config_file}", 'r') as infile:
             self.config = json.loads(infile.read())
@@ -133,8 +141,10 @@ class FileMerger:
         self.art_created = set()
 
     # merge all of the files on top of each other --> creates one piece of art
-    # order is a list of directories indicating the order
-    def merge(self, order):
+    def merge(self):
+        # get the order from the config's trait folders (in order already)
+        order = [group['folder'] for group in self.config['trait_groups']]
+
         traits_to_merge = []
 
         # iterate over the order
@@ -148,14 +158,14 @@ class FileMerger:
 
     # safe merge attempts to create an order for every combination in the merger
     # str: art_name, str: filename (which should have NO extension, for parallel json and art files), list: order (folders to merge from in order)
-    def safe_merge(self, art_name, filename, order):
+    def safe_merge(self, art_name, filename):
         # set unique to false to ensure that the art being created is unique
         unique = False
 
         # iterate for all combinations
         for i in range(self.combinations):
             # use a list to put together all the files to merge
-            traits_to_merge = self.merge(order)
+            traits_to_merge = self.merge()
 
             # check if some art with this combination has been created yet --> flatten the files into one string --> check the art created set
             new_combo = self.flatten_filenames(
@@ -164,6 +174,11 @@ class FileMerger:
             if not (new_combo in self.art_created):
                 # the new combination is unique!
                 unique = True
+
+                # save the art, so we don't create anything like it
+                self.art_created.add(new_combo)
+
+                # break the loop
                 break
 
         # if unique is false, return none
@@ -206,3 +221,18 @@ class FileMerger:
             combination_count *= len(group)
 
         return combination_count
+
+    # make the export directory
+    def check_export_directory(self):
+        # get the directories
+        file_directory = f"{self.export_directory}/{FILE_FOLDER}"
+        metadata_directory = f"{self.export_directory}/{METADATA_FOLDER}"
+
+        # make one for files and one for metadata
+        if not os.path.exists(file_directory):
+            os.makedirs(file_directory)
+            print(f"Created {file_directory} for file export")
+
+        if not os.path.exists(metadata_directory):
+            os.makedirs(metadata_directory)
+            print(f"Created {metadata_directory} for metadata export")

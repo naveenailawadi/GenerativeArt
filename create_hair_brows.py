@@ -22,7 +22,7 @@ def main(config_filepath, new_collection_filepath):
     brows_group = file_merger.trait_groups[BROWS_FOLDER]
     for i in range(len(hair_group)):
         # create the grouping
-        grouping = [hair_group.traits[i], brows_group.traits[i]]
+        grouping = [brows_group.traits[i], hair_group.traits[i]]
 
         # export the grouping
         file_merger.export_art(
