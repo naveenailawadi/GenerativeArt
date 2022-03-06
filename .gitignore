@@ -7,6 +7,9 @@
 *.JPG
 *.PNG
 
+# the temp dir
+TempDir/
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
