@@ -31,8 +31,11 @@ class Art:
 
     # export the data
     def export(self, art_name, folder, filename, art_extension):
+        # make a filepath
+        filepath = f"{folder}/{FILE_FOLDER}/{filename}"
+
         # save the image
-        self.image.save(f"{folder}/{FILE_FOLDER}/{filename}.{art_extension}")
+        self.image.save(filepath, art_extension)
 
         # get the metadata
         art_metadata = self.metadata

@@ -8,13 +8,10 @@ def get_filepath(folder, file):
 # create a main function that adds ipfs links to jsons (light formatting)
 
 
-def main(folder, base_uri, extension):
+def main(folder, base_uri):
     # clean the folder
     folder = os.path.abspath(folder)
     print(folder)
-
-    # clean the extension
-    extension = extension.split('.')[-1]
 
     # get all the items with the folder
     files = [f for f in os.listdir(
@@ -34,7 +31,7 @@ def main(folder, base_uri, extension):
         file_id = file.split('.')[0]
 
         # add the image link
-        data['image'] = f"{base_uri}/{file_id}.{extension}"
+        data['image'] = f"{base_uri}/{file_id}"
 
         # save the json file
         with open(filepath, 'w') as outfile:
@@ -44,5 +41,4 @@ def main(folder, base_uri, extension):
 if __name__ == '__main__':
     folder = input('Folder: ')
     base_uri = input('Base URI: ')
-    extension = input('Extension: ')
-    main(folder, base_uri, extension)
+    main(folder, base_uri)
