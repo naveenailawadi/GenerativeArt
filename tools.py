@@ -32,10 +32,10 @@ class Art:
     # export the data
     def export(self, art_name, folder, filename, art_extension):
         # make a filepath
-        filepath = f"{folder}/{FILE_FOLDER}/{filename}"
+        filepath = f"{folder}/{FILE_FOLDER}/{filename}.{art_extension}"
 
         # save the image
-        self.image.save(filepath, art_extension)
+        self.image.save(filepath)
 
         # get the metadata
         art_metadata = self.metadata
@@ -44,7 +44,7 @@ class Art:
         art_metadata['name'] = art_name
 
         # export the metadata
-        with open(f"{folder}/{METADATA_FOLDER}/{filename}.json", 'w') as outfile:
+        with open(f"{folder}/{METADATA_FOLDER}/{filename}", 'w') as outfile:
             outfile.write(json.dumps(art_metadata, indent=4))
 
     # function to create trait metadata

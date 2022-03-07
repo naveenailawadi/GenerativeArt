@@ -1,6 +1,6 @@
 {
-    "name": "Avvenire Test Citizen #5",
-    "image": "https://gateway.pinata.cloud/ipfs/QmbRr1JqDAc6mVR36NQWW16kSSbkhVE9cWbGMC9oQoajtc/5",
+    "name": "Avvenire Test Citizen #7",
+    "image": "https://gateway.pinata.cloud/ipfs/QmYBHHPo14vUcrboEox74rTBmQRU6vFi6T7d6F1cosP2aL/7.PNG",
     "attributes": [
         {
             "trait_type": "Body",
@@ -12,7 +12,7 @@
         },
         {
             "trait_type": "Mouth",
-            "value": "Open smiling mouth"
+            "value": "Smirk mouth"
         },
         {
             "trait_type": "Clothing",
@@ -20,7 +20,7 @@
         },
         {
             "trait_type": "Hair",
-            "value": "Red hero hair"
+            "value": "Green hero hair"
         }
     ],
     "trait_files": [
@@ -34,7 +34,7 @@
         },
         {
             "trait_type": "Mouth",
-            "file": "Mouth/03.PNG"
+            "file": "Mouth/01.PNG"
         },
         {
             "trait_type": "Clothing",
@@ -42,7 +42,7 @@
         },
         {
             "trait_type": "Hair",
-            "file": "Hair/5.PNG"
+            "file": "Hair/7.PNG"
         }
     ]
 }

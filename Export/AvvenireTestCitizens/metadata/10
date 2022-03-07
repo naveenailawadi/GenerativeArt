@@ -1,10 +1,10 @@
 {
-    "name": "Avvenire Test Citizen #9",
-    "image": "https://gateway.pinata.cloud/ipfs/QmbRr1JqDAc6mVR36NQWW16kSSbkhVE9cWbGMC9oQoajtc/9",
+    "name": "Avvenire Test Citizen #10",
+    "image": "https://gateway.pinata.cloud/ipfs/QmYBHHPo14vUcrboEox74rTBmQRU6vFi6T7d6F1cosP2aL/10.PNG",
     "attributes": [
         {
             "trait_type": "Body",
-            "value": "Fair skin "
+            "value": "Black skin"
         },
         {
             "trait_type": "Eyes",
@@ -16,17 +16,17 @@
         },
         {
             "trait_type": "Clothing",
-            "value": "Grey explorer jacket"
+            "value": "Red explorer jacket"
         },
         {
             "trait_type": "Hair",
-            "value": "White hero hair"
+            "value": "Red hero hair"
         }
     ],
     "trait_files": [
         {
             "trait_type": "Body",
-            "file": "Body/02.PNG"
+            "file": "Body/07.PNG"
         },
         {
             "trait_type": "Eyes",
@@ -38,11 +38,11 @@
         },
         {
             "trait_type": "Clothing",
-            "file": "Clothing/01.PNG"
+            "file": "Clothing/06.PNG"
         },
         {
             "trait_type": "Hair",
-            "file": "Hair/4.PNG"
+            "file": "Hair/5.PNG"
         }
     ]
 }

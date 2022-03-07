@@ -1,6 +1,6 @@
 {
-    "name": "Avvenire Test Citizen #19",
-    "image": "https://gateway.pinata.cloud/ipfs/QmbRr1JqDAc6mVR36NQWW16kSSbkhVE9cWbGMC9oQoajtc/19",
+    "name": "Avvenire Test Citizen #4",
+    "image": "https://gateway.pinata.cloud/ipfs/QmYBHHPo14vUcrboEox74rTBmQRU6vFi6T7d6F1cosP2aL/4.PNG",
     "attributes": [
         {
             "trait_type": "Body",
@@ -8,19 +8,19 @@
         },
         {
             "trait_type": "Eyes",
-            "value": "Purple relaxed eyes "
+            "value": "Blue relaxed eyes "
         },
         {
             "trait_type": "Mouth",
-            "value": "Open smiling mouth"
+            "value": "Teeth smiling mouth"
         },
         {
             "trait_type": "Clothing",
-            "value": "Black explorer jacket"
+            "value": "Orange explorer jacket"
         },
         {
             "trait_type": "Hair",
-            "value": "Pink hero hair"
+            "value": "Brown hero hair"
         }
     ],
     "trait_files": [
@@ -30,19 +30,19 @@
         },
         {
             "trait_type": "Eyes",
-            "file": "Eyes/02.PNG"
+            "file": "Eyes/01.PNG"
         },
         {
             "trait_type": "Mouth",
-            "file": "Mouth/03.PNG"
+            "file": "Mouth/02.PNG"
         },
         {
             "trait_type": "Clothing",
-            "file": "Clothing/05.PNG"
+            "file": "Clothing/03.PNG"
         },
         {
             "trait_type": "Hair",
-            "file": "Hair/6.PNG"
+            "file": "Hair/2.PNG"
         }
     ]
 }

@@ -7,8 +7,8 @@
 *.JPG
 *.PNG
 
-# the temp dir
-TempDir/
+# the exports
+Exports/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

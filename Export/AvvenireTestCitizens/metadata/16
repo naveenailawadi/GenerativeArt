@@ -1,6 +1,6 @@
 {
-    "name": "Avvenire Test Citizen #10",
-    "image": "https://gateway.pinata.cloud/ipfs/QmbRr1JqDAc6mVR36NQWW16kSSbkhVE9cWbGMC9oQoajtc/10",
+    "name": "Avvenire Test Citizen #16",
+    "image": "https://gateway.pinata.cloud/ipfs/QmYBHHPo14vUcrboEox74rTBmQRU6vFi6T7d6F1cosP2aL/16.PNG",
     "attributes": [
         {
             "trait_type": "Body",
@@ -20,7 +20,7 @@
         },
         {
             "trait_type": "Hair",
-            "value": "Pink hero hair"
+            "value": "Red hero hair"
         }
     ],
     "trait_files": [
@@ -42,7 +42,7 @@
         },
         {
             "trait_type": "Hair",
-            "file": "Hair/6.PNG"
+            "file": "Hair/5.PNG"
         }
     ]
 }
