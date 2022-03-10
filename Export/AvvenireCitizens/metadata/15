@@ -1,30 +1,34 @@
 {
-    "name": "Avvenire Test Citizen #4",
+    "name": "Avvenire Test Citizen #15",
     "image": "",
     "attributes": [
+        {
+            "trait_type": "Sex",
+            "value": "Male"
+        },
         {
             "trait_type": "Background",
             "value": "Default"
         },
         {
             "trait_type": "Body",
-            "value": "Fair skin "
+            "value": "Black skin"
         },
         {
             "trait_type": "Tattoo",
-            "value": "Cyber face & neck tattoo"
+            "value": "Default"
         },
         {
             "trait_type": "Eyes",
-            "value": "Blue foxy eyes"
+            "value": "Red relaxed eyes "
         },
         {
             "trait_type": "Mouth",
-            "value": "Normal smiling mouth"
+            "value": "Open smiling mouth"
         },
         {
             "trait_type": "Mask",
-            "value": "Blue Oni mask"
+            "value": "Default"
         },
         {
             "trait_type": "Necklace",
@@ -32,15 +36,15 @@
         },
         {
             "trait_type": "Clothing",
-            "value": "Black utility jacket "
+            "value": "Green explorer jacket"
         },
         {
             "trait_type": "Earrings",
-            "value": "Pink dual ring earrings"
+            "value": "Default"
         },
         {
             "trait_type": "Hair",
-            "value": "Straight black & purple ombre hair"
+            "value": "Ginger hero hair"
         },
         {
             "trait_type": "Effect",
@@ -54,23 +58,23 @@
         },
         {
             "trait_type": "Body",
-            "file": "Body/02.PNG"
+            "file": "Body/06.PNG"
         },
         {
             "trait_type": "Tattoo",
-            "file": "Tattoo/04.PNG"
+            "file": "Tattoo/DEFAULT.PNG"
         },
         {
             "trait_type": "Eyes",
-            "file": "Eyes/01.PNG"
+            "file": "Eyes/04.PNG"
         },
         {
             "trait_type": "Mouth",
-            "file": "Mouth/08.PNG"
+            "file": "Mouth/03.PNG"
         },
         {
             "trait_type": "Mask",
-            "file": "Mask/03.PNG"
+            "file": "Mask/DEFAULT.PNG"
         },
         {
             "trait_type": "Necklace",
@@ -78,15 +82,15 @@
         },
         {
             "trait_type": "Clothing",
-            "file": "Clothing/01.PNG"
+            "file": "Clothing/02.PNG"
         },
         {
             "trait_type": "Earrings",
-            "file": "Earrings/02.PNG"
+            "file": "Earrings/DEFAULT.PNG"
         },
         {
             "trait_type": "Hair",
-            "file": "Hair/05.PNG"
+            "file": "Hair/09.PNG"
         },
         {
             "trait_type": "Effect",

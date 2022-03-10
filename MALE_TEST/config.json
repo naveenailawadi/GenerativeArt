@@ -12,14 +12,14 @@
             "csv": "body.csv",
             "extension": ".PNG",
             "default": "DEFAULT.PNG",
-            "default_probability": 0.125
+            "default_probability": 0
         },
         {
             "folder": "TATTOO",
             "csv": "tattoo.csv",
             "extension": ".PNG",
             "default": "DEFAULT.PNG",
-            "default_probability": 0.25
+            "default_probability": 0.5
         },
         {
             "folder": "EYES",
@@ -40,14 +40,14 @@
             "csv": "mask.csv",
             "extension": ".PNG",
             "default": "DEFAULT.PNG",
-            "default_probability": 0.8
+            "default_probability": 1
         },
         {
             "folder": "NECKLACE",
             "csv": "necklace.csv",
             "extension": ".PNG",
             "default": "DEFAULT.PNG",
-            "default_probability": 5
+            "default_probability": 1
         },
         {
             "folder": "CLOTHING",
@@ -61,7 +61,7 @@
             "csv": "earrings.csv",
             "extension": ".PNG",
             "default": "DEFAULT.PNG",
-            "default_probability": 0.5
+            "default_probability": 0.75
         },
         {
             "folder": "HAIR",
@@ -78,5 +78,11 @@
             "default_probability": 1
         }
     ],
-    "export_extension": "PNG"
+    "export_extension": "PNG",
+    "extra_traits": [
+        {
+            "trait_type": "Sex",
+            "value": "Male"
+        }
+    ]
 }

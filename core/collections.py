@@ -2,6 +2,7 @@ from core import FileHandler
 from core import constants
 import random
 import shutil
+import json
 import sys
 import os
 
@@ -30,6 +31,8 @@ class InfoHandler:
         # move each file
         shutil.copy(self.data_filepath, export_data_filepath)
         shutil.copy(self.metadata_filepath, export_metadata_filepath)
+
+        return export_data_filepath, export_metadata_filepath
 
 
 # create a class to merge groups of information
@@ -96,6 +99,25 @@ class GroupMerger(FileHandler):
         # iterate over all the info handlers --> export pair
         for i in range(len(self.info_handlers)):
             # get the info handler --> have it export with the index to the export directory
-            self.info_handlers[i].export_pair(i, self.export_directory)
+            new_data_file, new_metadata_file = self.info_handlers[i].export_pair(
+                i, self.export_directory)
 
-        pass
+            # change the name in the metadata
+            self.rename(new_metadata_file)
+
+    # create a way to rename the citizens in order (just going to point to the wrong index after creation)
+    def rename(self, filepath):
+        # read the data
+        with open(filepath, 'r') as infile:
+            data = json.loads(infile.read())
+
+        # get the filename, which will correspond to the new name
+        _, new_name = os.path.split(filepath)
+
+        # change the name
+        prefix = data['name'].split('#')[0]
+        data['name'] = f"{prefix}#{new_name}"
+
+        # rewrite the file
+        with open(filepath, 'w') as outfile:
+            outfile.write(json.dumps(data, indent=4))

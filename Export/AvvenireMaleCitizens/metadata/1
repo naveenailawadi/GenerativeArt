@@ -3,24 +3,28 @@
     "image": "",
     "attributes": [
         {
+            "trait_type": "Sex",
+            "value": "Male"
+        },
+        {
             "trait_type": "Background",
             "value": "Default"
         },
         {
             "trait_type": "Body",
-            "value": "Black skin"
+            "value": "Dark brown skin"
         },
         {
             "trait_type": "Tattoo",
-            "value": "Forehead circuit tattoo"
+            "value": "Cyber eyes tattoo"
         },
         {
             "trait_type": "Eyes",
-            "value": "Green relaxed eyes "
+            "value": "Purple relaxed eyes "
         },
         {
             "trait_type": "Mouth",
-            "value": "Teeth smiling mouth"
+            "value": "Smirk mouth"
         },
         {
             "trait_type": "Mask",
@@ -40,7 +44,7 @@
         },
         {
             "trait_type": "Hair",
-            "value": "Red hero hair"
+            "value": "Blue hero hair"
         },
         {
             "trait_type": "Effect",
@@ -54,19 +58,19 @@
         },
         {
             "trait_type": "Body",
-            "file": "Body/06.PNG"
+            "file": "Body/05.PNG"
         },
         {
             "trait_type": "Tattoo",
-            "file": "Tattoo/02.PNG"
+            "file": "Tattoo/05.PNG"
         },
         {
             "trait_type": "Eyes",
-            "file": "Eyes/05.PNG"
+            "file": "Eyes/02.PNG"
         },
         {
             "trait_type": "Mouth",
-            "file": "Mouth/02.PNG"
+            "file": "Mouth/01.PNG"
         },
         {
             "trait_type": "Mask",
@@ -86,7 +90,7 @@
         },
         {
             "trait_type": "Hair",
-            "file": "Hair/05.PNG"
+            "file": "Hair/08.PNG"
         },
         {
             "trait_type": "Effect",

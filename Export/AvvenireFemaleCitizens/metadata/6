@@ -3,6 +3,10 @@
     "image": "",
     "attributes": [
         {
+            "trait_type": "Sex",
+            "value": "Female"
+        },
+        {
             "trait_type": "Background",
             "value": "Default"
         },
@@ -12,35 +16,35 @@
         },
         {
             "trait_type": "Tattoo",
-            "value": "Default"
+            "value": "Neon neck tattoo"
         },
         {
             "trait_type": "Eyes",
-            "value": "Green foxy eyes"
+            "value": "Yellow foxy eyes"
         },
         {
             "trait_type": "Mouth",
-            "value": "Red smirk lips"
+            "value": "Blue smirk lips"
         },
         {
             "trait_type": "Mask",
-            "value": "Default"
+            "value": "Blue Oni mask"
         },
         {
             "trait_type": "Necklace",
-            "value": "Default"
+            "value": "Green neon wavy necklace"
         },
         {
             "trait_type": "Clothing",
-            "value": "Grey utility jacket"
+            "value": "White utility jacket"
         },
         {
             "trait_type": "Earrings",
-            "value": "Default"
+            "value": "Pink dual ring earrings"
         },
         {
             "trait_type": "Hair",
-            "value": "Straight pink & red ombre hair"
+            "value": "Straight red & crimson red ombre hair"
         },
         {
             "trait_type": "Effect",
@@ -58,35 +62,35 @@
         },
         {
             "trait_type": "Tattoo",
-            "file": "Tattoo/DEFAULT.PNG"
+            "file": "Tattoo/03.PNG"
         },
         {
             "trait_type": "Eyes",
-            "file": "Eyes/05.PNG"
+            "file": "Eyes/06.PNG"
         },
         {
             "trait_type": "Mouth",
-            "file": "Mouth/04.PNG"
+            "file": "Mouth/06.PNG"
         },
         {
             "trait_type": "Mask",
-            "file": "Mask/DEFAULT.PNG"
+            "file": "Mask/03.PNG"
         },
         {
             "trait_type": "Necklace",
-            "file": "Necklace/DEFAULT.PNG"
+            "file": "Necklace/02.PNG"
         },
         {
             "trait_type": "Clothing",
-            "file": "Clothing/04.PNG"
+            "file": "Clothing/03.PNG"
         },
         {
             "trait_type": "Earrings",
-            "file": "Earrings/DEFAULT.PNG"
+            "file": "Earrings/02.PNG"
         },
         {
             "trait_type": "Hair",
-            "file": "Hair/01.PNG"
+            "file": "Hair/08.PNG"
         },
         {
             "trait_type": "Effect",

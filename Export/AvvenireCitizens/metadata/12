@@ -1,7 +1,11 @@
 {
-    "name": "Avvenire Test Citizen #8",
+    "name": "Avvenire Test Citizen #12",
     "image": "",
     "attributes": [
+        {
+            "trait_type": "Sex",
+            "value": "Male"
+        },
         {
             "trait_type": "Background",
             "value": "Default"
@@ -12,15 +16,15 @@
         },
         {
             "trait_type": "Tattoo",
-            "value": "Neon neck tattoo"
+            "value": "AV key tattoo"
         },
         {
             "trait_type": "Eyes",
-            "value": "Blue foxy eyes"
+            "value": "Blue relaxed eyes "
         },
         {
             "trait_type": "Mouth",
-            "value": "Purple relaxed lips"
+            "value": "Smirk mouth"
         },
         {
             "trait_type": "Mask",
@@ -32,7 +36,7 @@
         },
         {
             "trait_type": "Clothing",
-            "value": "White utility jacket"
+            "value": "Blue explorer jacket"
         },
         {
             "trait_type": "Earrings",
@@ -40,7 +44,7 @@
         },
         {
             "trait_type": "Hair",
-            "value": "Straight emerald & green ombre hair"
+            "value": "Green hero hair"
         },
         {
             "trait_type": "Effect",
@@ -58,7 +62,7 @@
         },
         {
             "trait_type": "Tattoo",
-            "file": "Tattoo/03.PNG"
+            "file": "Tattoo/01.PNG"
         },
         {
             "trait_type": "Eyes",
@@ -66,7 +70,7 @@
         },
         {
             "trait_type": "Mouth",
-            "file": "Mouth/03.PNG"
+            "file": "Mouth/01.PNG"
         },
         {
             "trait_type": "Mask",
@@ -78,7 +82,7 @@
         },
         {
             "trait_type": "Clothing",
-            "file": "Clothing/03.PNG"
+            "file": "Clothing/04.PNG"
         },
         {
             "trait_type": "Earrings",

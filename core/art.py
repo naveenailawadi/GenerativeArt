@@ -27,7 +27,7 @@ class Art:
         self.image.paste(new_image, (0, 0), new_image)
 
     # export the data
-    def export(self, art_name, folder, filename, art_extension):
+    def export(self, art_name, folder, filename, art_extension, extra_traits=[]):
         # make a filepath
         filepath = f"{folder}/{constants.FILE_FOLDER}/{filename}.{art_extension}"
 
@@ -39,6 +39,9 @@ class Art:
 
         # set the art name of the metadata
         art_metadata['name'] = art_name
+
+        # extend the traits to include the extra traits
+        art_metadata['attributes'] = extra_traits + art_metadata['attributes']
 
         # export the metadata
         with open(f"{folder}/{constants.METADATA_FOLDER}/{filename}", 'w') as outfile:
@@ -211,7 +214,8 @@ class FileMerger(FileHandler):
 
         # export the art
         extension = self.config['export_extension']
-        art.export(art_name, self.export_directory, filename, extension)
+        art.export(art_name, self.export_directory, filename,
+                   extension, extra_traits=self.config['extra_traits'])
 
     # a way to get unique names from a list of files
     def flatten_filenames(self, filenames):

@@ -3,6 +3,10 @@
     "image": "",
     "attributes": [
         {
+            "trait_type": "Sex",
+            "value": "Male"
+        },
+        {
             "trait_type": "Background",
             "value": "Default"
         },
@@ -12,7 +16,7 @@
         },
         {
             "trait_type": "Tattoo",
-            "value": "Neck connection tattoo"
+            "value": "Forehead circuit tattoo"
         },
         {
             "trait_type": "Eyes",
@@ -20,7 +24,7 @@
         },
         {
             "trait_type": "Mouth",
-            "value": "Open smiling mouth"
+            "value": "Smirk mouth"
         },
         {
             "trait_type": "Mask",
@@ -36,11 +40,11 @@
         },
         {
             "trait_type": "Earrings",
-            "value": "Default"
+            "value": "Neon earrings"
         },
         {
             "trait_type": "Hair",
-            "value": "Ginger hero hair"
+            "value": "Green hero hair"
         },
         {
             "trait_type": "Effect",
@@ -58,7 +62,7 @@
         },
         {
             "trait_type": "Tattoo",
-            "file": "Tattoo/03.PNG"
+            "file": "Tattoo/02.PNG"
         },
         {
             "trait_type": "Eyes",
@@ -66,7 +70,7 @@
         },
         {
             "trait_type": "Mouth",
-            "file": "Mouth/03.PNG"
+            "file": "Mouth/01.PNG"
         },
         {
             "trait_type": "Mask",
@@ -82,11 +86,11 @@
         },
         {
             "trait_type": "Earrings",
-            "file": "Earrings/DEFAULT.PNG"
+            "file": "Earrings/01.PNG"
         },
         {
             "trait_type": "Hair",
-            "file": "Hair/09.PNG"
+            "file": "Hair/07.PNG"
         },
         {
             "trait_type": "Effect",

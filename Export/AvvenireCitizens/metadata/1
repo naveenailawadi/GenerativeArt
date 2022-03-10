@@ -1,26 +1,30 @@
 {
-    "name": "Avvenire Test Citizen #7",
+    "name": "Avvenire Test Citizen #1",
     "image": "",
     "attributes": [
+        {
+            "trait_type": "Sex",
+            "value": "Male"
+        },
         {
             "trait_type": "Background",
             "value": "Default"
         },
         {
             "trait_type": "Body",
-            "value": "Black skin"
+            "value": "Fair skin "
         },
         {
             "trait_type": "Tattoo",
-            "value": "Neck connection tattoo"
+            "value": "Default"
         },
         {
             "trait_type": "Eyes",
-            "value": "Yellow relaxed eyes "
+            "value": "Blue relaxed eyes "
         },
         {
             "trait_type": "Mouth",
-            "value": "Open smiling mouth"
+            "value": "Teeth smiling mouth"
         },
         {
             "trait_type": "Mask",
@@ -32,7 +36,7 @@
         },
         {
             "trait_type": "Clothing",
-            "value": "Black explorer jacket"
+            "value": "Grey explorer jacket"
         },
         {
             "trait_type": "Earrings",
@@ -40,7 +44,7 @@
         },
         {
             "trait_type": "Hair",
-            "value": "White hero hair"
+            "value": "Red hero hair"
         },
         {
             "trait_type": "Effect",
@@ -54,19 +58,19 @@
         },
         {
             "trait_type": "Body",
-            "file": "Body/06.PNG"
+            "file": "Body/02.PNG"
         },
         {
             "trait_type": "Tattoo",
-            "file": "Tattoo/03.PNG"
+            "file": "Tattoo/DEFAULT.PNG"
         },
         {
             "trait_type": "Eyes",
-            "file": "Eyes/06.PNG"
+            "file": "Eyes/01.PNG"
         },
         {
             "trait_type": "Mouth",
-            "file": "Mouth/03.PNG"
+            "file": "Mouth/02.PNG"
         },
         {
             "trait_type": "Mask",
@@ -78,7 +82,7 @@
         },
         {
             "trait_type": "Clothing",
-            "file": "Clothing/05.PNG"
+            "file": "Clothing/01.PNG"
         },
         {
             "trait_type": "Earrings",
@@ -86,7 +90,7 @@
         },
         {
             "trait_type": "Hair",
-            "file": "Hair/04.PNG"
+            "file": "Hair/05.PNG"
         },
         {
             "trait_type": "Effect",

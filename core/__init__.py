@@ -1,4 +1,5 @@
 from core import constants
+import shutil
 import os
 
 
@@ -6,6 +7,9 @@ import os
 class FileHandler:
     # make the export directory
     def check_export_directory(self):
+        # clear old export directory
+        shutil.rmtree(self.export_directory)
+
         # get the directories
         file_directory = f"{self.export_directory}/{constants.FILE_FOLDER}"
         metadata_directory = f"{self.export_directory}/{constants.METADATA_FOLDER}"

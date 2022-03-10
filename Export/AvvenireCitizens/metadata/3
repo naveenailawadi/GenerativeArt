@@ -1,7 +1,11 @@
 {
-    "name": "Avvenire Test Citizen #0",
+    "name": "Avvenire Test Citizen #3",
     "image": "",
     "attributes": [
+        {
+            "trait_type": "Sex",
+            "value": "Male"
+        },
         {
             "trait_type": "Background",
             "value": "Default"
@@ -12,7 +16,7 @@
         },
         {
             "trait_type": "Tattoo",
-            "value": "Neon face tattoo"
+            "value": "AV key tattoo"
         },
         {
             "trait_type": "Eyes",
@@ -40,7 +44,7 @@
         },
         {
             "trait_type": "Hair",
-            "value": "Pink hero hair"
+            "value": "Blonde hero hair"
         },
         {
             "trait_type": "Effect",
@@ -58,7 +62,7 @@
         },
         {
             "trait_type": "Tattoo",
-            "file": "Tattoo/04.PNG"
+            "file": "Tattoo/01.PNG"
         },
         {
             "trait_type": "Eyes",
@@ -86,7 +90,7 @@
         },
         {
             "trait_type": "Hair",
-            "file": "Hair/06.PNG"
+            "file": "Hair/01.PNG"
         },
         {
             "trait_type": "Effect",
