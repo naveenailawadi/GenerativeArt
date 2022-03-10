@@ -1,4 +1,4 @@
-from tools import FileMerger
+from core.art import FileMerger
 import sys
 import os
 
