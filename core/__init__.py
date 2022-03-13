@@ -8,7 +8,8 @@ class FileHandler:
     # make the export directory
     def check_export_directory(self):
         # clear old export directory
-        shutil.rmtree(self.export_directory)
+        if os.path.exists(self.export_directory):
+            shutil.rmtree(self.export_directory)
 
         # get the directories
         file_directory = f"{self.export_directory}/{constants.FILE_FOLDER}"
