@@ -1,77 +1,77 @@
 {
     "trait_groups": [
         {
-            "folder": "BACKGROUND",
+            "folder": "Background",
             "csv": "background.csv",
             "extension": ".PNG",
             "default": "DEFAULT.PNG",
             "default_probability": 1
         },
         {
-            "folder": "BODY",
+            "folder": "Body",
             "csv": "body.csv",
             "extension": ".PNG",
             "default": "DEFAULT.PNG",
-            "default_probability": 0.125
+            "default_probability": 0
         },
         {
-            "folder": "TATTOO",
+            "folder": "Tattoo",
             "csv": "tattoo.csv",
             "extension": ".PNG",
             "default": "DEFAULT.PNG",
-            "default_probability": 0.25
+            "default_probability": 1
         },
         {
-            "folder": "EYES",
+            "folder": "Eyes",
             "csv": "eyes.csv",
             "extension": ".PNG",
             "default": "DEFAULT.PNG",
             "default_probability": 0
         },
         {
-            "folder": "MOUTH",
+            "folder": "Mouth",
             "csv": "mouth.csv",
             "extension": ".PNG",
             "default": "DEFAULT.PNG",
             "default_probability": 0
         },
         {
-            "folder": "MASK",
+            "folder": "Mask",
             "csv": "mask.csv",
             "extension": ".PNG",
             "default": "DEFAULT.PNG",
-            "default_probability": 0.9
+            "default_probability": 1
         },
         {
-            "folder": "NECKLACE",
+            "folder": "Necklace",
             "csv": "necklace.csv",
             "extension": ".PNG",
             "default": "DEFAULT.PNG",
-            "default_probability": 0.5
+            "default_probability": 1
         },
         {
-            "folder": "CLOTHING",
+            "folder": "Clothing",
             "csv": "clothing.csv",
             "extension": ".PNG",
             "default": "DEFAULT.PNG",
             "default_probability": 0
         },
         {
-            "folder": "EARRINGS",
+            "folder": "Earrings",
             "csv": "earrings.csv",
             "extension": ".PNG",
             "default": "DEFAULT.PNG",
-            "default_probability": 0.5
+            "default_probability": 1
         },
         {
-            "folder": "HAIR",
+            "folder": "Hair",
             "csv": "hair.csv",
             "extension": ".PNG",
             "default": "DEFAULT.PNG",
             "default_probability": 0
         },
         {
-            "folder": "EFFECT",
+            "folder": "Effect",
             "csv": "effect.csv",
             "extension": ".PNG",
             "default": "DEFAULT.PNG",
