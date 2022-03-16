@@ -1,5 +1,4 @@
-from core import FileHandler
-from core import constants
+from core import art
 import random
 import shutil
 import json
@@ -25,8 +24,8 @@ class InfoHandler:
         _, extension = os.path.splitext(data_file)
 
         # create the export filepaths (use the indexes, as we do not want export conflicts or overwrites)
-        export_data_filepath = f"{export_directory}/{constants.FILE_FOLDER}/{index}{extension}"
-        export_metadata_filepath = f"{export_directory}/{constants.METADATA_FOLDER}/{index}"
+        export_data_filepath = f"{export_directory}/{art.FILE_FOLDER}/{index}{extension}"
+        export_metadata_filepath = f"{export_directory}/{art.METADATA_FOLDER}/{index}"
 
         # move each file
         shutil.copy(self.data_filepath, export_data_filepath)
@@ -36,7 +35,7 @@ class InfoHandler:
 
 
 # create a class to merge groups of information
-class GroupMerger(FileHandler):
+class GroupMerger(art.FileHandler):
     def __init__(self, export_directory, directories):
         self.directories = directories
         self.export_directory = export_directory
@@ -65,7 +64,7 @@ class GroupMerger(FileHandler):
         pairs = []
 
         # get the files
-        files = os.listdir(f"{directory}/{constants.METADATA_FOLDER}")
+        files = os.listdir(f"{directory}/{art.METADATA_FOLDER}")
 
         # check if the pairs exist for everything in metadata
         for file in files:
@@ -80,8 +79,8 @@ class GroupMerger(FileHandler):
 
     # function to check if a file pair exists
     def get_file_pair(self, directory, file, extension):
-        data_file = f"{directory}/{constants.FILE_FOLDER}/{file}{extension}"
-        metadata_file = f"{directory}/{constants.METADATA_FOLDER}/{file}"
+        data_file = f"{directory}/{art.FILE_FOLDER}/{file}{extension}"
+        metadata_file = f"{directory}/{art.METADATA_FOLDER}/{file}"
 
         if not os.path.isfile(data_file):
             return None

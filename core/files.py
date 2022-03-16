@@ -1,4 +1,4 @@
-from core import constants
+from core import FILE_FOLDER, METADATA_FOLDER
 import shutil
 import os
 
@@ -12,8 +12,8 @@ class FileHandler:
             shutil.rmtree(self.export_directory)
 
         # get the directories
-        file_directory = f"{self.export_directory}/{constants.FILE_FOLDER}"
-        metadata_directory = f"{self.export_directory}/{constants.METADATA_FOLDER}"
+        file_directory = f"{self.export_directory}/{FILE_FOLDER}"
+        metadata_directory = f"{self.export_directory}/{METADATA_FOLDER}"
 
         # make one for files and one for metadata
         if not os.path.exists(file_directory):
@@ -27,7 +27,7 @@ class FileHandler:
     # make a function that gets the extension of the first file in a directory
     def get_directory_extension(self, directory):
         # get the folder
-        folder = f"{directory}/{constants.FILE_FOLDER}"
+        folder = f"{directory}/{FILE_FOLDER}"
 
         # get the files in the folder
         files = os.listdir(folder)
