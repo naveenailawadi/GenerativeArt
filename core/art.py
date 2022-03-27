@@ -1,4 +1,5 @@
 from PIL import Image
+import json
 
 
 # set the folders for export

@@ -1,4 +1,4 @@
-from core import FILE_FOLDER, METADATA_FOLDER
+from core.art import FILE_FOLDER, METADATA_FOLDER
 import shutil
 import os
 

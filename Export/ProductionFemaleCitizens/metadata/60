@@ -1,0 +1,100 @@
+{
+    "name": "Avvenire Test Citizen #60",
+    "image": "",
+    "attributes": [
+        {
+            "trait_type": "Sex",
+            "value": "Female"
+        },
+        {
+            "trait_type": "Background",
+            "value": "Default"
+        },
+        {
+            "trait_type": "Body",
+            "value": "Black skin"
+        },
+        {
+            "trait_type": "Tattoo",
+            "value": "No tattoo"
+        },
+        {
+            "trait_type": "Eyes",
+            "value": "Pink charming eyes"
+        },
+        {
+            "trait_type": "Mouth",
+            "value": "Orange smirk mouth"
+        },
+        {
+            "trait_type": "Mask",
+            "value": "No accessories"
+        },
+        {
+            "trait_type": "Necklace",
+            "value": "Default"
+        },
+        {
+            "trait_type": "Clothing",
+            "value": "Ocean cyber jacket"
+        },
+        {
+            "trait_type": "Earrings",
+            "value": "No effects"
+        },
+        {
+            "trait_type": "Hair",
+            "value": "White double braided hair"
+        },
+        {
+            "trait_type": "Effect",
+            "value": "Default"
+        }
+    ],
+    "trait_files": [
+        {
+            "trait_type": "Background",
+            "file": "Background/DEFAULT.PNG"
+        },
+        {
+            "trait_type": "Body",
+            "file": "Body/06.PNG"
+        },
+        {
+            "trait_type": "Tattoo",
+            "file": "Tattoo/DEFAULT.PNG"
+        },
+        {
+            "trait_type": "Eyes",
+            "file": "Eyes/46.PNG"
+        },
+        {
+            "trait_type": "Mouth",
+            "file": "Mouth/17.PNG"
+        },
+        {
+            "trait_type": "Mask",
+            "file": "Mask/DEFAULT.PNG"
+        },
+        {
+            "trait_type": "Necklace",
+            "file": "Necklace/DEFAULT.PNG"
+        },
+        {
+            "trait_type": "Clothing",
+            "file": "Clothing/30.PNG"
+        },
+        {
+            "trait_type": "Earrings",
+            "file": "Earrings/DEFAULT.PNG"
+        },
+        {
+            "trait_type": "Hair",
+            "file": "Hair/70.PNG"
+        },
+        {
+            "trait_type": "Effect",
+            "file": "Effect/DEFAULT.PNG"
+        }
+    ]
+}

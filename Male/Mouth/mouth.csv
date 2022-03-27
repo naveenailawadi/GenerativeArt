@@ -1,5 +1,17 @@
 file,trait_name
-DEFAULT.PNG,Default
-01.PNG,Smirk mouth
-02.PNG,Teeth smiling mouth
-03.PNG,Open smiling mouth
+DEFAULT.PNG,Default mouth
+01.PNG,Neutral mouth
+02.PNG,Neutral goatee mouth
+03.PNG,Neutral full bearded mouth
+04.PNG,Angry mouth
+05.PNG,Angry goatee mouth
+06.PNG,Angry full bearded mouth
+07.PNG,Smirk mouth
+08.PNG,Smirk full bearded mouth
+09.PNG,Smirk goatee mouth
+10.PNG,Smiling mouth
+11.PNG,Smiling full bearded mouth
+12.PNG,Smiling goatee mouth
+13.PNG,Open mouth
+14.PNG,Open full bearded mouth
+15.PNG,Open goatee mouth

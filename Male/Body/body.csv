@@ -1,8 +1,8 @@
-file,trait_name
-DEFAULT.PNG,Default
-01.PNG,Pale white skin 
-02.PNG,Fair skin 
-03.PNG,Darker white skin 
-04.PNG,Brown skin
-05.PNG,Dark brown skin
-06.PNG,Black skin
+file,trait_name,rarity
+DEFAULT.PNG,Default,0
+01.PNG,Pale white skin,.02
+02.PNG,Fair skin,0.2
+03.PNG,Darker white skin,0.2
+04.PNG,Brown skin,0.2
+05.PNG,Dark brown skin,0.1
+06.PNG,Black skin,0.1

@@ -17,6 +17,7 @@ class TraitGroupHandler:
 
         # open the trait csv
         df = pd.read_csv(f"{self.directory}/{trait_group['csv']}")
+        print(f"Creating group handler for {trait_group['csv']}")
 
         # add a column called full_path mapping the file and directory
         df['full_path'] = [

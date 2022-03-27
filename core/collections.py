@@ -1,4 +1,5 @@
 from core import art
+from core.files import FileHandler
 import random
 import shutil
 import json
@@ -35,7 +36,7 @@ class InfoHandler:
 
 
 # create a class to merge groups of information
-class GroupMerger(art.FileHandler):
+class GroupMerger(FileHandler):
     def __init__(self, export_directory, directories):
         self.directories = directories
         self.export_directory = export_directory
