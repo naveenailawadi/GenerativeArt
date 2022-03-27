@@ -7,8 +7,11 @@
 *.JPG
 *.PNG
 
+*.zip
+
 # the exports
 Exports/
+Archive/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
